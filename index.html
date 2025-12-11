@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+
+        /* Parent container to place boxes side by side */
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 50px;   /* space between boxes */
+            margin-top: 40px;
+        }
+
+        /* BLUE BOX */
+        .design{
+            background-color: #4675a1;
+            font-family: 'Franklin Gothic Medium';
+            color: silver;
+            border-radius: 10px;
+            border: 15px solid #0a3055;
+            width: 50%;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .design h1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .design img{
+            height: 250px;
+            width: 250px;
+            border: 15px solid #a5bbd1;
+            margin-bottom: 40px;
+        }
+
+        .design a{
+            font-size: 20px;
+            color: #cad9e8;
+            text-decoration: none;
+        }
+
+        .design button{
+            border: 10px solid #db8eee;
+            border-radius: 9px;
+            height: 80px;
+            width: 200px;
+            background-color: #8d10ac;
+            cursor: pointer;
+        }
+
+        .design button:hover{
+            background-color: #3e1a46;
+        }
+
+        /* PINK BOX */
+        .text_column{
+            background-color: #a14655;
+            border-radius: 10px;
+            border: 15px solid #550a3b;
+            width: 35%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 15px;
+        }
+
+        .text_column h1{
+            font-size: 22px;
+            margin: 5px 0;
+            color: silver;
+            font-family: 'Trebuchet MS';
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="design">
+            <h1>BEAUTIFUL HOUSE</h1>
+            <img src="1.jpg">
+            <button>
+                <a href="tag.html">NEXT PAGE</a>
+            </button>
+        </div>
+
+        <div class="text_column">
+            <h1>Name : Fantasy Villa</h1>
+            <h1>Price : $5,000,000</h1>
+            <h1>Address : Ut-89, cocaine hills, Valeria, Night Court.</h1>
+            <h1>Owner's Name : Lucian Malfoy</h1>
+            <h1>Phone No. : +89567412</h1>
+            <h1>Visiting Hours : 10am - 5pm</h1>
+        </div>
+    </div>
+</body>
+</html>
