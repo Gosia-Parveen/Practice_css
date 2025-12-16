@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+
+        /* Parent container to place boxes side by side */
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 50px;   /* space between boxes */
+            margin-top: 40px;
+        }
+
+        /*-------------------------------- BLUE BOX------------------------------------------------ */
+        .design{
+            background-color: #4675a1;
+            font-family: 'Franklin Gothic Medium';
+            color: silver;
+            border-radius: 10px;
+            border: 15px solid #0a3055;
+            width: 50%;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .design h1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .design img{
+            height: 250px;
+            width: 250px;
+            border: 15px solid #a5bbd1;
+            margin-bottom: 40px;
+        }
+
+        .design a{
+            font-size: 20px;
+            color: #cad9e8;
+            text-decoration: none;
+        }
+
+        .design button{
+            border: 10px solid #db8eee;
+            border-radius: 9px;
+            height: 80px;
+            width: 200px;
+            background-color: #8d10ac;
+            cursor: pointer;
+        }
+
+        .design button:hover{
+            background-color: #3e1a46;
+        }
+
+        /*-------------------------------- PINK BOX------------------------------------------------ */
+        .text_column{
+            background-color: #a14655;
+            border-radius: 10px;
+            border: 15px solid #550a3b;
+            width: 35%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 15px;
+        }
+
+        .text_column h1{
+            font-size: 22px;
+            margin: 5px 0;
+            color: silver;
+            font-family: 'Trebuchet MS';
+        }
+
+
+        /*----------------------------------MARSHMALLOW RECIPE BOX---------------------------------*/
+        .marsh_ing {
+            background-color: #f0b4be;
+            border: 8px solid #285b8a;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            width: 30%;
+            margin-left: 10px;
+        }
+        .marsh_ing pre{
+            font-size: 25px;
+            color: #3a0227;
+            font-family: inherit;
+        }
+        .marsh_ing h4{
+            font-size: 30px;
+            color: #0a3055;
+            text-align: center;
+            font-family: cursive;
+        }
+        .marsh_ing img{
+            height: 300px;
+            width: 250px;
+            border: 8px solid #03509d;
+        }
+
+        .marsh_meth {
+            background-color: #f0b4be;
+            border: 8px solid #285b8a;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 700px;
+            width: 60%;
+            margin-left: 10px;
+        }
+        .marsh_meth h4{
+            font-size: 30px;
+            color: #0a3055;
+            text-align: center;
+            font-family: cursive;
+        }
+
+        .marsh_meth ul, .marsh_meth li{
+            font-size: 25px;
+            color: #3a0227;
+            text-align: left;
+            font-family: inherit;
+        }
+
+        /*----------------------------------CROCHET ROSE BOX---------------------------------*/
+
+        .crochet {
+            background-color: #5b0005;
+            border: 9px dashed #d2a941;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            min-height: 500px;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .crochet dd,dt {
+            font-size: 28px;
+            font-family: cursive;
+            color: #e68757;
+            text-align: center;
+            padding: 0%;
+        }
+        .crochet video{
+            height: 300px;
+            width: 500px;
+            border: 5px solid goldenrod;
+            margin-top: 100px;
+        }
+
+    </style>
+</head>
+<body>
+<!-------------------------------ESTATE/DESIGN BOX---------------------------->
+
+    <div class="container">
+
+        <div class="design">
+            <h1>BEAUTIFUL HOUSE</h1>
+            <img src="1.jpg">
+            <button>
+                <a href="tag.html">NEXT PAGE</a>
+            </button>
+        </div>
+
+        <div class="text_column">
+            <h1>Name : Fantasy Villa</h1>
+            <h1>Price : $5,000,000</h1>
+            <h1>Address : Ut-89, cocaine hills, Valeria, Night Court.</h1>
+            <h1>Owner's Name : Lucian Malfoy</h1>
+            <h1>Phone No. : +89567412</h1>
+            <h1>Visiting Hours : 10am - 5pm</h1>
+        </div>
+    </div>
+    <br>
+    <hr style="height:12px; background-color:#570303; border:none;">
+
+    <br>
+<!--------------------------------------RECIPE BOX---------------------------->
+    <h2 style="font-size: 30px;
+            color: #0a3055;
+            text-align: center;
+            font-family: cursive;">MARSHMALLOW RECIPE</h2><br>
+    
+    <div class="container">      
+        <div class="marsh_ing">
+            <h4 style="font-size: 27.5px;">Ingredients</h4>
+            <pre>3 packets unflavored gelatin
+            1 cup cold water (divided)    
+            1½ cups granulated sugar    
+            1 cup light corn syrup    
+            ¼ tsp salt    
+            1 tsp vanilla extract    
+            Powdered sugar (for dusting)</pre>
+            <footer>Footer: here pre tag, figcaption is used.</footer> 
+            <br>
+            <img src="2.jpg"> 
+            <figcaption>Marshmallows</figcaption>              
+        </div>
+
+        <div class="marsh_meth ">        <!--methods-->
+            <section>
+                <h4 style="font-size: 27.5px;">Method</h4>
+                <ul>
+                    <li>Bloom the gelatin:<br>
+                    Add gelatin to ½ cup cold water in a large bowl. Let it sit for 10 minutes.  </li>
+
+                    <li>Make sugar syrup:<br>
+                    In a saucepan, combine sugar, corn syrup, salt, and remaining ½ cup water.<br>
+                    Heat on medium, stirring until sugar dissolves. Let it boil (do not stir) until it reaches soft-ball stage or about 115°C (240°F).</li>  
+
+                    <li>Whip it up:<br>
+                    Slowly pour the hot syrup into the gelatin while beating with a hand or stand mixer on low.<br>
+                    Increase speed to high and beat for 8–10 minutes until thick, fluffy, and glossy. </li> 
+
+                    <li>Flavor:<br>
+                    Add vanilla extract and mix briefly. </li> 
+
+                    <li>Set the marshmallows:<br>
+                       Pour mixture into a greased tray dusted with powdered sugar. Smooth the top and dust again.<br>
+                           Let it set for 4–6 hours or overnight.  </li>
+
+                    <li>Cut & coat:<br>
+                        Cut into cubes and toss in powdered sugar to prevent sticking.</li>
+                    </ul>
+                    
+                <footer>FOOTER: here section tag is used</footer>
+            </section>
+        </div>
+    </div>
+    <br>
+    <hr style="height:12px; background-color:#570303; border:none;">
+    <br>
+    
+<!--------------------------------------RECIPE BOX---------------------------->
+    <div class="container">
+    <div class="crochet">
+        <h2 style="text-align:center; color:#e68757;font-size: 30px;"><u>Crocheting a Rose</u></h2>
+
+        <!-- blockquote -->
+        <blockquote style="font-style:italic; color:#e68757; font-size: 20px;">
+            “Crocheting a rose is not just crafting a flower, it is stitching patience into beauty.”
+        </blockquote>
+
+        <!-- description list -->
+        <dl>
+            <dt>YARN</dt>
+            <dd>Soft cotton or acrylic yarn in red or pink shades.</dd>
+
+            <dt>HOOK SIZE</dt>
+            <dd>3.5 mm or 4 mm crochet hook for neat petals.</dd>
+
+            <dt>SKILL LEVEL</dt>
+            <dd>Beginner-friendly with basic stitches.</dd>
+        </dl>
+    </div>
+    <figure class="crochet">
+        <video src="31-Trim.mp4" controls autoplay muted loop></video>
+        <figcaption style="color:#e68757; font-size:22px;">ROSE</figcaption>
+    </figure>
+
+    </div>
+    <br>
+    <hr style="height:12px; background-color:#570303; border:none;">
+    <br>
+</body>
+</html>
