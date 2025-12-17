@@ -163,87 +163,88 @@
             /*-----------------------------------------MOBILE RESPONSE---------------------------------*/
 
         @media (max-width: 768px) {
-    /*-----------------------------------------design BOX---------------------------------*/
-            
-            .design{
-                align-items: center;
-                justify-content: space-between;
-                max-width: 80%;
-                height: auto;
-            }
-            .design h1, a{
-                font-size: 16px;
-            }
-            .design img{
-                width: 50%;
-                height: auto;
-                position: relative;
-                transform: none;
-                left: 0;
-                margin: 0 auto;
-            }
-    /*-----------------------------------------TEXT BOX(PINK)---------------------------------*/
 
-            .text_column{
-                align-items: center;
-                justify-content: space-between;
-                max-width: 80%;
-                height: auto;
-            }
-            .text_column h1{
-                font-size: 16px;
-            }
-    /*-----------------------------------------MARSHMALLOW--------RECIPE--------------------------------*/
+    /* STACK ALL CONTAINERS */
+    .container{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
 
-            .marsh_ing{
-                align-items: center;
-                justify-content: space-between;
-                max-width: 80%;
-                height: auto;
-            }
-            .marsh_ing h4,pre{
-                font-size: 16px;
-            }
-            .marsh_ing img{
-                width: 50%;
-                height: auto;
-                position: relative;
-                transform: none;
-                left: 0;
-                margin: 0 auto;
-            }
-    /*-----------------------------------------MARSHMALLOW--------METHOD--------------------------------*/
+    /* ---------- DESIGN BOX ---------- */
+    .design{
+        width: 90%;
+        height: auto;
+    }
+    .design h1{
+        font-size: 18px;
+    }
+    .design a{
+        font-size: 16px;
+    }
+    .design img{
+        width: 70%;
+        height: auto;
+        margin: 20px 0;
+    }
 
-            .marsh_meth{
-                align-items: center;
-                justify-content: space-between;
-                max-width: 80%;
-                height: auto;
-            }
-            .marsh_meth h4,ul,li{
-                font-size: 16px;
-            }
-    /*-----------------------------------------TEXT BOX(PINK)---------------------------------*/
+    /* ---------- TEXT COLUMN ---------- */
+    .text_column{
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        align-items: center;
+    }
+    .text_column h1{
+        font-size: 16px;
+        text-align: center;
+    }
 
-            .crochet{
-                align-items: center;
-                justify-content: space-between;
-                max-width: 80%;
-                height: auto;
-            }
-            .crochet dd,dt{
-                font-size: 16px;
-            }
-            .crochet video{
-                width: 50%;
-                height: auto;
-                position: relative;
-                transform: none;
-                left: 0;
-                margin: 0 auto;
-            }
-            
-        }
+    /* ---------- MARSHMALLOW INGREDIENTS ---------- */
+    .marsh_ing{
+        width: 90%;
+        height: auto;
+    }
+    .marsh_ing h4{
+        font-size: 20px;
+    }
+    .marsh_ing pre{
+        font-size: 16px;
+    }
+    .marsh_ing img{
+        width: 70%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    /* ---------- MARSHMALLOW METHOD ---------- */
+    .marsh_meth{
+        width: 90%;
+        height: auto;
+    }
+    .marsh_meth h4{
+        font-size: 20px;
+    }
+    .marsh_meth ul li{
+        font-size: 16px;
+    }
+
+    /* ---------- CROCHET BOX ---------- */
+    .crochet{
+        width: 90%;
+        height: auto;
+    }
+    .crochet dt,
+    .crochet dd{
+        font-size: 16px;
+        text-align: center;
+    }
+    .crochet video{
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+    }
+}
 
     </style>
 </head>
@@ -362,4 +363,5 @@
     <br>
 </body>
 </html>
+
 
