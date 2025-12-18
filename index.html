@@ -11,7 +11,7 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            gap: 50px;   /* space between boxes */
+            gap: 10px;   /* space between boxes */
             margin-top: 40px;
         }
 
@@ -29,34 +29,12 @@
             align-items: center;
         }
 
-        .design h1{
-            text-align: center;
-            margin-bottom: 20px;
-        }
         .design img{
-            height: 250px;
-            width: 250px;
+            margin-top: 20px;
+            height: 400px;
+            width: 90%;
             border: 15px solid #a5bbd1;
-            margin-bottom: 40px;
-        }
-
-        .design a{
-            font-size: 20px;
-            color: #cad9e8;
-            text-decoration: none;
-        }
-
-        .design button{
-            border: 10px solid #db8eee;
-            border-radius: 9px;
-            height: 80px;
-            width: 200px;
-            background-color: #8d10ac;
-            cursor: pointer;
-        }
-
-        .design button:hover{
-            background-color: #3e1a46;
+            margin-bottom: 20px;
         }
 
         /*-------------------------------- PINK BOX------------------------------------------------ */
@@ -64,21 +42,40 @@
             background-color: #a14655;
             border-radius: 10px;
             border: 15px solid #550a3b;
-            width: 35%;
-            height: 400px;
+            width: 50%;
+            height: 500px;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding-left: 15px;
+            padding-left: 5px;
+            align-items: center;
         }
 
         .text_column h1{
-            font-size: 22px;
+            font-size: 30px;
             margin: 5px 0;
             color: silver;
             font-family: 'Trebuchet MS';
         }
 
+        .text_column a{
+            font-size: 20px;
+            color: #cad9e8;
+            text-decoration: none;
+        }
+
+        .text_column button{
+            border: 10px solid #db8eee;
+            border-radius: 9px;
+            height: 60px;
+            width: 200px;
+            background-color: #8d10ac;
+            cursor: pointer;
+        }
+
+        .text_column button:hover{
+            background-color: #3e1a46;
+        }
 
         /*----------------------------------MARSHMALLOW RECIPE BOX---------------------------------*/
         .marsh_ing {
@@ -88,9 +85,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            min-height: 400px;
-            width: 30%;
-            margin-left: 10px;
+            height: 750px;
+            width: 40%;
         }
         .marsh_ing pre{
             font-size: 25px;
@@ -105,7 +101,7 @@
         }
         .marsh_ing img{
             height: 300px;
-            width: 250px;
+            width: 80%;
             border: 8px solid #03509d;
         }
 
@@ -116,9 +112,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 700px;
+            height: 750px;
             width: 60%;
-            margin-left: 10px;
         }
         .marsh_meth h4{
             font-size: 30px;
@@ -142,110 +137,108 @@
             border-radius: 6px;
             display: flex;
             flex-direction: column;
-            width: 45%;
-            min-height: 500px;
+            width: 50%;
+            height: 500px;
             align-items: center;
-            padding-top: 20px;
         }
         .crochet dd,dt {
             font-size: 28px;
             font-family: cursive;
             color: #e68757;
             text-align: center;
-            padding: 0%;
         }
         .crochet video{
             height: 300px;
-            width: 500px;
+            width: 90%;
             border: 5px solid goldenrod;
             margin-top: 100px;
         }
-            /*-----------------------------------------MOBILE RESPONSE---------------------------------*/
+
+
+    /*-----------------------------------------MOBILE RESPONSE---------------------------------*/
 
         @media (max-width: 768px) {
+    /*-----------------------------------------design BOX---------------------------------*/
+            
+            .design{
+                align-items: center;
+                justify-content: space-between;
+                max-width: 80%;
+                height: auto;
+            }
+            .design h1, a{
+                font-size: 16px;
+            }
+            .design img{
+                width: 50%;
+                height: auto;
+                position: relative;
+                transform: none;
+                left: 0;
+                margin: 0 auto;
+            }
+    /*-----------------------------------------TEXT BOX(PINK)---------------------------------*/
 
-    /* STACK ALL CONTAINERS */
-    .container{
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
+            .text_column{
+                align-items: center;
+                justify-content: space-between;
+                max-width: 80%;
+                height: auto;
+            }
+            .text_column h1{
+                font-size: 16px;
+            }
+    /*-----------------------------------------MARSHMALLOW--------RECIPE--------------------------------*/
 
-    /* ---------- DESIGN BOX ---------- */
-    .design{
-        width: 90%;
-        height: auto;
-    }
-    .design h1{
-        font-size: 18px;
-    }
-    .design a{
-        font-size: 16px;
-    }
-    .design img{
-        width: 70%;
-        height: auto;
-        margin: 20px 0;
-    }
+            .marsh_ing{
+                align-items: center;
+                justify-content: space-between;
+                max-width: 80%;
+                height: auto;
+            }
+            .marsh_ing h4,pre{
+                font-size: 16px;
+            }
+            .marsh_ing img{
+                width: 50%;
+                height: auto;
+                position: relative;
+                transform: none;
+                left: 0;
+                margin: 0 auto;
+            }
+    /*-----------------------------------------MARSHMALLOW--------METHOD--------------------------------*/
 
-    /* ---------- TEXT COLUMN ---------- */
-    .text_column{
-        width: 90%;
-        height: auto;
-        padding: 15px;
-        align-items: center;
-    }
-    .text_column h1{
-        font-size: 16px;
-        text-align: center;
-    }
+            .marsh_meth{
+                align-items: center;
+                justify-content: space-between;
+                max-width: 80%;
+                height: auto;
+            }
+            .marsh_meth h4,ul,li{
+                font-size: 16px;
+            }
+    /*-----------------------------------------TEXT BOX(PINK)---------------------------------*/
 
-    /* ---------- MARSHMALLOW INGREDIENTS ---------- */
-    .marsh_ing{
-        width: 90%;
-        height: auto;
-    }
-    .marsh_ing h4{
-        font-size: 20px;
-    }
-    .marsh_ing pre{
-        font-size: 16px;
-    }
-    .marsh_ing img{
-        width: 70%;
-        height: auto;
-        margin-top: 10px;
-    }
-
-    /* ---------- MARSHMALLOW METHOD ---------- */
-    .marsh_meth{
-        width: 90%;
-        height: auto;
-    }
-    .marsh_meth h4{
-        font-size: 20px;
-    }
-    .marsh_meth ul li{
-        font-size: 16px;
-    }
-
-    /* ---------- CROCHET BOX ---------- */
-    .crochet{
-        width: 90%;
-        height: auto;
-    }
-    .crochet dt,
-    .crochet dd{
-        font-size: 16px;
-        text-align: center;
-    }
-    .crochet video{
-        width: 90%;
-        height: auto;
-        margin-top: 20px;
-    }
-}
-
+            .crochet{
+                align-items: center;
+                justify-content: space-between;
+                max-width: 80%;
+                height: auto;
+            }
+            .crochet dd,dt{
+                font-size: 16px;
+            }
+            .crochet video{
+                width: 50%;
+                height: auto;
+                position: relative;
+                transform: none;
+                left: 0;
+                margin: 0 auto;
+            }
+            
+        }
     </style>
 </head>
 <body>
@@ -254,20 +247,22 @@
     <div class="container">
 
         <div class="design">
-            <h1>BEAUTIFUL HOUSE</h1>
             <img src="1.jpg">
-            <button>
-                <a href="tag.html">NEXT PAGE</a>
-            </button>
+            <figcaption style="text-align: center;
+            font-size: 20px; color: whitesmoke;">BEAUTIFUL HOUSE</figcaption>
+            
         </div>
 
         <div class="text_column">
             <h1>Name : Fantasy Villa</h1>
             <h1>Price : $5,000,000</h1>
-            <h1>Address : Ut-89, cocaine hills, Valeria, Night Court.</h1>
             <h1>Owner's Name : Lucian Malfoy</h1>
             <h1>Phone No. : +89567412</h1>
             <h1>Visiting Hours : 10am - 5pm</h1>
+            <h1>Address : Ut-89, Cocaine Hills, Sector 7B, Valeria, Night Court Province, Eastern Dominion, 540218.</h1><br>
+            <button>
+                <a href="tag.html">NEXT PAGE</a>
+            </button>
         </div>
     </div>
     <br>
@@ -352,10 +347,10 @@
             <dd>Beginner-friendly with basic stitches.</dd>
         </dl>
     </div>
-    <figure class="crochet">
+    <div class="crochet">
         <video src="31-Trim.mp4" controls autoplay muted loop></video>
         <figcaption style="color:#e68757; font-size:22px;">ROSE</figcaption>
-    </figure>
+    </div>
 
     </div>
     <br>
@@ -363,5 +358,3 @@
     <br>
 </body>
 </html>
-
-
